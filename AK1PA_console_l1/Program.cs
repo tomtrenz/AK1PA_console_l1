@@ -2,10 +2,21 @@
 
 namespace AK1PA_console_l1
 {
+    class Trida
+    {
+        public int prvek;
+
+        public Trida(int x)
+        {
+            prvek = x;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
+            Trida t = new Trida(1);
+            Console.WriteLine(t.prvek);
             double delkaStrany = 5.0;
             double obvod = 4.0 * delkaStrany;
             double obsah = delkaStrany * delkaStrany;
@@ -54,6 +65,11 @@ namespace AK1PA_console_l1
             double splatka = (i * D) / (1 - Math.Pow(v, n));
             Console.WriteLine("Uver o castce = " + D + ",-Kc, uroku " + rocniUrokProcenta + "% a delce splaceni " + pocetLetSplaceni +" let");
             Console.WriteLine(" - ma splatku = " + splatka + ",-Kc");
+
+            Console.WriteLine((9 * 0.1f + 0.1f) == 1.0f);
+            Console.WriteLine((10 * 0.1m) == 1.0m);
+            
+
         }
     }
 }
